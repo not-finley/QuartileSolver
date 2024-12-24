@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quartile Solver</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div id="content" class="p-4 text-body-secondary">
+        <h1>Quartile Solver</h1>
+        <p>Enter Today's Tiles!</p>
+        <div class="board">
+            <div id="inputs"></div>
+            <button id="solve" class="btn btn-primary">Solve</button>
+        </div>
+        
+        <div id="solutions" style="display: none; text-align: center;">
+            <h2>Solutions</h2>
+            <div class="solution-group" id="tile1">
+                <h3 onclick="toggleVisibility('tile1-words')">1 Tile Words</h3>
+                <ul id="tile1-words" class="word-list"></ul>
+            </div>
+            <div class="solution-group" id="tile2">
+                <h3 onclick="toggleVisibility('tile2-words')">2 Tile Words</h3>
+                <ul id="tile2-words" class="word-list"></ul>
+            </div>
+            <div class="solution-group" id="tile3">
+                <h3 onclick="toggleVisibility('tile3-words')">3 Tile Words</h3>
+                <ul id="tile3-words" class="word-list"></ul>
+            </div>
+            <div class="solution-group" id="tile4">
+                <h3 onclick="toggleVisibility('tile4-words')">4 Tile Words</h3>
+                <ul id="tile4-words" class="word-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
